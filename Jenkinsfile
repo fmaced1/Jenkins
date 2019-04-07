@@ -21,7 +21,7 @@ thirdEnvVar= 'THIRD_VAR'
                 environment name: 'run_test_only', value: 'yes'
             }
             steps{
-                sh 'cd examples/java-calculator && mvn clean integration-test'
+                sh 'mkdir examples/java-calculator && cd examples/java-calculator && mvn clean integration-test'
             }
         }
 //5. demo parallel stage with script
