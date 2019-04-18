@@ -1,0 +1,7 @@
+docker run -itd --name=jenkins_lab -p 8080:8080 -v C:\Users\fabricio.macedo\Desktop\Jenkins:/home/jenkins jenkins:latest
+
+"Atualizar o Jenkins"
+docker exec -it -u 0 jenkins_lab bash
+cp /home/jenkins/jenkins.war /usr/share/jenkins/jenkins.war
+docker stop jenkins_lab
+docker start jenkins_lab
