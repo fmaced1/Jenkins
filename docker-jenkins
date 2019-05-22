@@ -1,4 +1,4 @@
-docker run -itd --name=jenkins_lab -p 8080:8080 -v C:\Users\fabricio.macedo\Desktop\Jenkins:/home/jenkins jenkins:latest
+docker run --name=jenkins -d --user=root -v /home/fabricio.macedo/jenkins/:/home/jenkins -p 8080:8080 jenkins:latest
 
 "Atualizar o Jenkins"
 "Copiar o jenkins.war dos downloads para pasta C:\Users\fabricio.macedo\Desktop\Jenkins\"
